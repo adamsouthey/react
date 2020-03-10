@@ -26,10 +26,10 @@ export const App = () => {
 
     return (
         <>
-            <h1>GIFS</h1>
+            <h1>GIFSs</h1>
             <div className="container" >
                 {
-                    loading && !giphyData ? <p>Loading GIFss...</p> : giphyData.map((item) => {
+                    loading && !giphyData ? <p>Loading GIFs...</p> : giphyData.map((item) => {
                         return (
                             <>
                                 <img className="item" key={item.id} src={item.images.downsized_large.url} alt="" />
