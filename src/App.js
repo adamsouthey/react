@@ -26,7 +26,7 @@ export const App = () => {
 
     return (
         <>
-            <h1 style={{ color: 'red', fontSize: '5rem' }}> GIFSs</h1>
+            <h1 style={{ color: 'red', fontSize: '10rem' }}> Favourite GIFS</h1>
             <div className="container" >
                 {
                     loading && !giphyData ? <p>Loading GIFs...</p> : giphyData.map((item) => {
