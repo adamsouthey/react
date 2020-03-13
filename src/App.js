@@ -20,13 +20,13 @@ export const App = () => {
                     }
                 )
         } catch (err) {
-            console.log('Error fetching and parsing data', err.message);
+            console.log('Error fetching and parsing data:', err.message);
         }
     }
 
     return (
         <>
-            <h1 style={{ color: 'red', fontSize: '10rem' }}> Favourite GIFS</h1>
+            <h1 style={{ color: 'black', fontSize: '6rem' }}> Favourite GIFs version 2</h1>
             <div className="container" >
                 {
                     loading && !giphyData ? <p>Loading GIFs...</p> : giphyData.map((item) => {
